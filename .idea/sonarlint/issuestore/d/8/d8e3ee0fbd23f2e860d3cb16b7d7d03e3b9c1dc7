@@ -1,0 +1,6 @@
+
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(¿Å§þÿÿÿÿÿ8Œƒû¯Ò0
+T
+java:S1128"2Remove this unused import 'com.hllog.demo03.Rent'.(À–¦—ýÿÿÿÿ8ý¿ü¯Ò0
+z
+java:S1488&"^Immediately return this expression instead of assigning it to the temporary variable "result".(×å¯ 8à®ó¯Ò0

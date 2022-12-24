@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hllog.mapper.UserMapper">
+    <select id="selectUser" resultType="user">
+        select * from kuangstudy.user;
+    </select>
+
+    <insert id="addUser" parameterType="user">
+        insert into kuangstudy.user (id,name,password) values(#{id},#{name},#{password});
+    </insert>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from kuangstudy.user where id=#{id}
+    </delete>
+</mapper>

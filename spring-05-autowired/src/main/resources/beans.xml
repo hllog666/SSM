@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="com.hllog.pojo.Cat"/>
+    <bean id="dog" class="com.hllog.pojo.Dog"/>
+
+    <bean id="people" class="com.hllog.pojo.People">
+        <property name="name" value="hllog"/>
+        <property name="cat" ref="cat"/>
+        <property name="dog" ref="dog"/>
+    </bean>
+
+    <!--
+    byName:会自动在容器上下文中查找和自己对象set方法后面的值对应的bean id
+    -->
+    <bean id="people2" class="com.hllog.pojo.People" autowire="byName">
+        <property name="name" value="hllog"/>
+    </bean>
+
+    <!--
+    byType:会自动在容器上下文中查找和自己对象属性类型的bean id
+    -->
+    <bean id="people3" class="com.hllog.pojo.People" autowire="byType">
+        <property name="name" value="hllog"/>
+    </bean>
+
+</beans>

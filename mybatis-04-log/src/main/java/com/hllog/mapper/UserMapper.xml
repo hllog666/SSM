@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hllog.mapper.UserMapper">
+    <resultMap id="userMap" type="user">
+        <result column="password" property="pwd"/>
+    </resultMap>
+
+    <select id="getUserById" resultMap="userMap" parameterType="int">
+        select * from mybatis.user where id = #{id}
+    </select>
+
+    <select id="getUserByLimit" resultMap="userMap" parameterType="map">
+        select * from mybatis.user limit #{startIndex}, #{pageSize}
+    </select>
+
+    <select id="getUserByRowBounds" resultMap="userMap">
+        select * from mybatis.user
+    </select>
+
+</mapper>

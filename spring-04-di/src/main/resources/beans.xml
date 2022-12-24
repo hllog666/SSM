@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.hllog.pojo.Address">
+        <property name="address" value="中国"/>
+    </bean>
+
+    <bean id="student" class="com.hllog.pojo.Student">
+        <!-- 普通值注入 -->
+        <property name="name" value="hllog"/>
+        <!-- bean注入 -->
+        <property name="address" ref="address"/>
+        <!-- 数组注入 -->
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>水浒传</value>
+                <value>西游记</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <!-- List -->
+        <property name="hobbies">
+            <list>
+                <value>下象棋</value>
+                <value>敲代码</value>
+                <value>听歌</value>
+                <value>看书</value>
+            </list>
+        </property>
+        <!-- Map -->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="123456"/>
+                <entry key="银行卡" value="456123"/>
+            </map>
+        </property>
+        <!-- Set -->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>CS</value>
+                <value>王者荣耀</value>
+                <value>和平精英</value>
+            </set>
+        </property>
+        <!-- null -->
+        <property name="wife">
+            <null/>
+        </property>
+        <!-- Properties -->
+        <property name="info">
+            <props>
+                <prop key="学号">45678</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,9 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(»Æ¨ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¬–ªÒ
+]
+java:S1854";Remove this useless assignment to local variable "proceed".(‚€£ùûÿÿÿÿ8Ï–ú°Ò0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾ÜÁıÿÿÿÿ
+N
+java:S1481",Remove this unused "proceed" local variable.(‚€£ùûÿÿÿÿ8Ğ–ú°Ò0
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(°ìÍë8ü×ú°Ò0

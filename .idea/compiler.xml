@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-02-hellospring" />
+        <module name="mybatis-02-config" />
+        <module name="springmvc-04-controller" />
+        <module name="mybatis-08-dynamicsql" />
+        <module name="spring-08-proxy" />
+        <module name="spring-06-anno" />
+        <module name="spring-09-aop" />
+        <module name="springmvc-07-intercepter" />
+        <module name="spring-01-ioc1" />
+        <module name="mybatis-01-start" />
+        <module name="springmvc-01-servlet" />
+        <module name="spring-04-di" />
+        <module name="springmvc-02-hellomvc" />
+        <module name="spring-11-transaction" />
+        <module name="springmvc-03-anno" />
+        <module name="mybatis-04-log" />
+        <module name="spring-05-autowired" />
+        <module name="mybatis-09-cache" />
+        <module name="ssmbuild" />
+        <module name="springmvc-05-json" />
+        <module name="mybatis-05-anno" />
+        <module name="mybatis-06-complex" />
+        <module name="mybatis-03-resultmap" />
+        <module name="mybatis-07-onetomulti" />
+        <module name="spring-10-mybatis" />
+        <module name="springmvc-06-ajax" />
+        <module name="spring-03-ioc2" />
+        <module name="spring-07-appconfig" />
+        <module name="springmvc-08-file" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

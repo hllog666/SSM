@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.hllog.pojo.User">
+        <property name="name" value="hllog"/>
+    </bean>
+
+    <bean id="user2" class="com.hllog.pojo.User">
+        <constructor-arg index="0" value="hl"/>
+    </bean>
+
+    <bean id="user3" class="com.hllog.pojo.User">
+        <constructor-arg type="java.lang.String" value="hllog666"/>
+    </bean>
+
+    <!--
+    id:bean的唯一标识，相当于对象名
+    class:bean对象所对应的全限定名
+    name:也是别名，可以同时取多个别名，使用逗号、空格或分号分隔
+    scope:作用域，默认单例
+     -->
+    <bean id="user4" class="com.hllog.pojo.User">
+        <constructor-arg name="name" value="hllog666666"/>
+    </bean>
+
+</beans>
